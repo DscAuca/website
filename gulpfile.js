@@ -20,20 +20,20 @@ const paths = {
 const imagemin = require('gulp-imagemin');
  
 const imagesGulp = function() {
-  return gulp.src(paths.images)
-    .pipe(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
-      imagemin.svgo({
-          plugins: [
-              {removeViewBox: true},
-              {cleanupIDs: false}
-          ]
-      })
-    ]))
-    .pipe(gulp.dest('dist/images'));
-};
+    return gulp.src(paths.images)
+      .pipe(imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
+            plugins: [
+                {removeViewBox: true},
+                {cleanupIDs: false}
+            ]
+        })
+      ]))
+      .pipe(gulp.dest('dist/images'));
+  };
 
 const gulpCss = function() {
   return gulp.src(paths.css)
