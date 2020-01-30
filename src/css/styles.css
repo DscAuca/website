@@ -94,9 +94,9 @@ p {
     text-align: left;
     line-height: 1.5;
   }
-  .imglogo{
+  /* .imglogo{
     content:url("dist/images/icon1.png");
-  }
+  } */
 }
 
 .text-warning {
