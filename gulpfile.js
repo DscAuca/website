@@ -55,13 +55,13 @@ const jsGulp = function() {
 
 const copyManifest = function() {
   return gulp.src(paths.manifest)
-      .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('dist/'))
 };
 
 const swGulp = function() {
   return gulp.src(paths.sw)
     .pipe(uglify())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('dist/'));
 };
 
 const vendorGulp = function() {
@@ -76,7 +76,7 @@ const htmlGulp = function() {
       collapseWhitespace: true,
       removeComments: true
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('dist/'));
 };
 
 const watchJS = function() {
