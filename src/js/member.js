@@ -250,7 +250,7 @@ $('#memberForm').on('submit', function(event) {
       $('#memberModal').modal('hide');
       var msgClasses = "h3 text-left tada animated text-success";
       $("#memeberSubmit").removeClass().addClass(msgClasses).text('Welcome To DSC AUCA ' + inputName + '. Your are now a ' + inputStack + ' student.');
-      alert('welcome to DSC EKSU ' + inputName + '. Your membership has been registered to learn ' + inputStack)
+      alert('welcome to DSC AUCA ' + inputName + '. Your membership has been registered to learn ' + inputStack)
     })
     .catch(function(error) {
       var msgClasses = "h3 text-left text-danger";
